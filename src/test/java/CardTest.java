@@ -39,7 +39,7 @@ public class CardTest {
     @Test
     void test() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Ласточкина Ева-Юлия");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79222222222");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+7922222222");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button__text")).click();
         String text = driver.findElement(By.className("paragraph")).getText();
